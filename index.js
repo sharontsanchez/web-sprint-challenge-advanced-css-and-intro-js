@@ -297,7 +297,7 @@ function addArtist(array) {
     name:"Sharon Tharakan Sanchez",
     years:"1990-2021",
     genre:"Web Design",
-    nationality:"American-Indian",
+    nationality:"Indian-American",
     bio:"A lover of spice, culture and storytelling. As an explorer of the outdoors that enjoys hiking and backpacking, I hope to inspire people around me to travel and experience cultures locally and internationally. As the world expands into the realm of technology; I have realized that in order to grow and succeed, I need to walk through this door of opportunity at Lambda. I hope to pursue my interest in sustainability, travel, health and wellness through this spectrum of work."
   };
   array.push(newObject)

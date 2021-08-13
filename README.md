@@ -97,7 +97,7 @@ What kind of result the function returns.
 5. How do you access a key inside of an object inside of an array?
 
 We can access an item at any time in an array, we just need to call the item by its position in the array. Items are given a numerical position (index) according to where it is in the array, in order. An array's numerical order ALWAYS starts at 0, so the first item is in the 0 index, the second in the 1 index, the third in the 2, and so on.
-But when we store a key inside of an object inside of an array, we have to invoke a function to call out the specific key at the specific index in that array into a new array = []; looping through the array and pushing out the key we require or want in the array. We can do that by setting a new array name to equal to [] and using the for loop statement " for (i = 0; i <= places.length-1; i++){}. 
+But when we store a key inside of an object inside of an array, we have to invoke a function to call out the specific key at the specific index in that array into a new array = []; looping through the array and pushing out the key we require or want in the array. We can do that by setting a new array name to equal to [] and using the for loop statement " for (i = 0; i <= array.length-1; i++){}. 
 
 function findAString(array, string, key, key2){
   const results = []; // creating an empty array so that we can push our results to it 
