@@ -22,11 +22,92 @@ Commit your code regularly and meaningfully.
 
 Please answer the following questions below, you may edit the readme file to include your answers below the question.
 
+
 1. How would you describe acessibility on the web to someone new to programming?
+
+When someone describes a site as "accessible," they mean that any user can use all its features and content, regardless of how the user accesses the web — even and especially users with physical or mental impairments.
+
+Accessibility is the practice of making your websites usable by as many people as possible. We traditionally think of this as being about people with disabilities, but the practice of making sites accessible also benefits other groups such as those using mobile devices, or those with slow network connections. 
+
+Accessible sites present information through multiple sensory channels, such as sound and sight, and they allow for additional means of site navigation and interactivity beyond the typical point-and-click-interface: keyboard-based control and voice-based navigation. The combination of a multisensory approach and a multi-interactivity approach allows disabled users to access the same information as nondisabled users.
+
+Building accessible sites benefit everyone:
+
+Semantic HTML, which improves accessibility, also improves SEO, making your site more findable.
+Caring about accessibility demonstrates good ethics and morals, which improves your public image.
+Other good practices that improve accessibility also make your site more usable by other groups, such as mobile phone users or those on low network speed. In fact, everyone can benefit from many such improvements.
+
 2. Talk about 3 different things you can do to ensure your website is accessible. 
+
+a. Include proper alt text for images.
+Images should include Alt text in the markup/code; complex images should have more extensive descriptions near the image (perhaps as a caption or descriptive summaries built right into a neighboring paragraph)
+
+b. Use color with care.
+use color, but also be sure to use other visual indicators, such as an asterisk or question mark. Be sure to also distinguish blocks of content from one another using visual separation (such as whitespace or borders). This will consider both people with color deficiency as well as other groups of people with disabilities particularly users with learning disabilities, benefit greatly from color when used to distinguish and organize your content.
+
+c. Use Semantic HTML tags to structure your page
+use of semantic HTML provides accessibility, SEO (search engine optimization) and helps other developers to read your work at ease. When it is used correctly and stragetically,  the content of your website will be well-organized and easily interpreted by screen readers and others with disabilities. 
+
+
 3. How would you explain the concept of a variable to someone new to programming?
+
+Variables are containers for store, change and use data in code. They also provide a way of labeling data with a descriptive name, so our programs can be understood more clearly by the reader and ourselves. It is helpful to think of variables as containers that hold information. Their sole purpose is to label and store data in memory. This data can then be used throughout your program.
+The syntax to create a variable is first the keyword, a space, the name we are giving the variable, an equal sign, the value we are assigning the variable, and then a semicolon. 
+
+There are 3 ways to declare a JavaScript variable: var, let and const.
+There are differences between them
+
+Var
+- can be reassigned
+- can also be redeclared
+- function scoped
+
+Let
+- can be reassigned
+- cannot be redeclared 
+- block scoped 
+
+
+Const
+- cannot be reassigned
+- cannot be redeclared
+- block scoped 
+
+All JavaScript variables must be identified with unique names.
+
+These unique names are called identifiers. Identifiers can be short names (like x and y) or more descriptive names (age, sum, totalVolume).
+
+The general rules for constructing names for variables (unique identifiers) are:
+Names can contain letters, digits, underscores, and dollar signs.
+Names must begin with a letter
+Names can also begin with $ and _ (but we will not use it in this tutorial)
+Names are case sensitive (y and Y are different variables)
+Reserved words (like JavaScript keywords) cannot be used as names
+
 4. What is the purpose of using functions in code?
+
+A function is simply a “chunk” of code that you can use over and over again, rather than writing it out multiple times. Functions enable programmers to break down or decompose a problem into smaller chunks, each of which performs a particular task.
+The first reason is reusability. Once a function is defined, it can be used over and over and over again. You can invoke the same function many times in your program, which saves you work.
+The second reason is abstraction. In order to use a particular function you need to know the following things:
+The name of the function;
+What the function does;
+What arguments you must give to the function; and
+What kind of result the function returns.
+
 5. How do you access a key inside of an object inside of an array?
+
+We can access an item at any time in an array, we just need to call the item by its position in the array. Items are given a numerical position (index) according to where it is in the array, in order. An array's numerical order ALWAYS starts at 0, so the first item is in the 0 index, the second in the 1 index, the third in the 2, and so on.
+But when we store a key inside of an object inside of an array, we have to invoke a function to call out the specific key at the specific index in that array into a new array = []; looping through the array and pushing out the key we require or want in the array. We can do that by setting a new array name to equal to [] and using the for loop statement " for (i = 0; i <= places.length-1; i++){}. 
+
+function findAString(array, string, key, key2){
+  const results = []; // creating an empty array so that we can push our results to it 
+  for(let i = 0; i < array.length; i++){ // writing a for loop so we can search through the entire array provided 
+    if(array[i][key].includes(string)){ // condition - if the array provided and the key provided includes the string provided then
+      results.push(array[i][key2]); // push that array and other key to the empty results array 
+    } 
+  }
+  return results; // outside of the loop because we want to return the results after we've looped through the entire array
+}
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
